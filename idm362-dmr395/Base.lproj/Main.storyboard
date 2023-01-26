@@ -16,6 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxA-II-ZuA">
+                                <rect key="frame" x="30" y="102" width="134" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="34"/>
+                                <color key="textColor" red="0.23529411764705882" green="0.21568627450980393" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hQi-sN-fw7" userLabel="VStack / Menu">
                                 <rect key="frame" x="30" y="175.66666666666663" width="333" height="233"/>
                                 <subviews>
@@ -103,11 +109,11 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tQy-QZ-mtr">
+                                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tQy-QZ-mtr">
                                                 <rect key="frame" x="131" y="0.0" width="204" height="31"/>
                                                 <color key="tintColor" red="0.51372549019607838" green="0.19607843137254902" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="200" id="6gA-gL-bJ2"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="6gA-gL-bJ2"/>
                                                 </constraints>
                                                 <color key="minimumTrackTintColor" red="0.51372549020000002" green="0.1960784314" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </slider>
@@ -122,12 +128,6 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxA-II-ZuA">
-                                <rect key="frame" x="30" y="102" width="134" height="40.666666666666657"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="34"/>
-                                <color key="textColor" red="0.23529411764705882" green="0.21568627450980393" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -136,7 +136,7 @@
                             <constraint firstItem="YxA-II-ZuA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="Fun-ws-Goj"/>
                             <constraint firstItem="YxA-II-ZuA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="X5d-He-KlT"/>
                             <constraint firstItem="YxA-II-ZuA" firstAttribute="leading" secondItem="hQi-sN-fw7" secondAttribute="leading" id="jn8-jL-vow"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YxA-II-ZuA" secondAttribute="trailing" constant="229" id="mCc-w3-ZM3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="YxA-II-ZuA" secondAttribute="trailing" constant="229" id="mCc-w3-ZM3"/>
                             <constraint firstItem="hQi-sN-fw7" firstAttribute="top" secondItem="YxA-II-ZuA" secondAttribute="bottom" constant="33" id="oTv-L8-Fty"/>
                         </constraints>
                     </view>
