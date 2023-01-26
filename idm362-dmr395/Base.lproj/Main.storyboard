@@ -100,20 +100,20 @@
                                             <constraint firstAttribute="height" constant="1" id="Tpn-PP-D7c"/>
                                         </constraints>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8hg-68-gj4" userLabel="HStack / Label &amp; Slider">
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8hg-68-gj4" userLabel="HStack / Label &amp; Slider">
                                         <rect key="frame" x="0.0" y="187.00000000000003" width="333" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spacing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWF-h6-REV">
-                                                <rect key="frame" x="0.0" y="5" width="61.666666666666664" height="20.333333333333332"/>
+                                                <rect key="frame" x="0.0" y="5" width="133" height="20.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tQy-QZ-mtr">
+                                            <slider opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tQy-QZ-mtr">
                                                 <rect key="frame" x="131" y="0.0" width="204" height="31"/>
                                                 <color key="tintColor" red="0.51372549019607838" green="0.19607843137254902" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="6gA-gL-bJ2"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="XFj-f5-xxI"/>
                                                 </constraints>
                                                 <color key="minimumTrackTintColor" red="0.51372549020000002" green="0.1960784314" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </slider>
