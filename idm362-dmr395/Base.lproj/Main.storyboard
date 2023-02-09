@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -35,30 +36,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Week 03" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUf-k3-ySO">
-                                <rect key="frame" x="131" y="405.66666666666669" width="131.33333333333337" height="41"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="placeholder" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRw-A3-FbH">
+                                <rect key="frame" x="20" y="79" width="353" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sff-Is-BtZ">
+                                <rect key="frame" x="20" y="135" width="353" height="35"/>
+                                <color key="tintColor" name="Prince"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add 1">
+                                    <color key="baseBackgroundColor" name="Prince"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oTR-o1-fIW"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TzX-X1-Ctk">
+                                <rect key="frame" x="20" y="190" width="353" height="38.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQe-0z-t8a">
+                                <rect key="frame" x="20" y="248.33333333333337" width="353" height="35"/>
+                                <color key="tintColor" name="Prince"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Name Submit">
+                                    <color key="baseBackgroundColor" name="Prince"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QBj-3f-XG2"/>
+                                    <action selector="nameBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dZM-0E-wkk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="MUf-k3-ySO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SN8-Se-Bb7"/>
-                            <constraint firstItem="MUf-k3-ySO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jNc-cW-I2s"/>
+                            <constraint firstItem="LRw-A3-FbH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="54U-FW-A9Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gQe-0z-t8a" secondAttribute="trailing" constant="20" id="8j5-ha-udO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LRw-A3-FbH" secondAttribute="trailing" constant="20" id="KxB-9n-rwh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TzX-X1-Ctk" secondAttribute="trailing" constant="20" id="MCb-ec-j9L"/>
+                            <constraint firstItem="gQe-0z-t8a" firstAttribute="top" secondItem="TzX-X1-Ctk" secondAttribute="bottom" constant="20" id="ONX-CW-cZI"/>
+                            <constraint firstItem="Sff-Is-BtZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dmw-1f-kUZ"/>
+                            <constraint firstItem="LRw-A3-FbH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ebT-Y5-LaQ"/>
+                            <constraint firstItem="gQe-0z-t8a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="n9N-mY-L9t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sff-Is-BtZ" secondAttribute="trailing" constant="20" id="qAW-gy-9FS"/>
+                            <constraint firstItem="TzX-X1-Ctk" firstAttribute="top" secondItem="Sff-Is-BtZ" secondAttribute="bottom" constant="20" id="vPy-iQ-YVc"/>
+                            <constraint firstItem="TzX-X1-Ctk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="w2H-HB-A6B"/>
+                            <constraint firstItem="Sff-Is-BtZ" firstAttribute="top" secondItem="LRw-A3-FbH" secondAttribute="bottom" constant="20" id="xW2-Xv-qzy"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Main" image="house.fill" catalog="system" id="RkJ-ID-ufL"/>
+                    <connections>
+                        <outlet property="displayLabel" destination="LRw-A3-FbH" id="mCK-2D-4pO"/>
+                        <outlet property="nameText" destination="TzX-X1-Ctk" id="Jhf-Rp-FGI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1608" y="739"/>
+            <point key="canvasLocation" x="-2747" y="739"/>
         </scene>
         <!--Settings-->
         <scene sceneID="sEM-Dc-Rbp">
             <objects>
-                <viewController id="28U-MR-OVx" sceneMemberID="viewController">
+                <viewController id="28U-MR-OVx" customClass="ViewControllerSettings" customModule="idm362_dmr395" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rub-d6-16J">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,7 +166,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tb7-Cj-hgv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-295" y="739"/>
+            <point key="canvasLocation" x="732" y="739"/>
         </scene>
     </scenes>
     <resources>
@@ -131,6 +174,9 @@
         <image name="gearshape.2.fill" catalog="system" width="128" height="101"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="people" width="30" height="30"/>
+        <namedColor name="Prince">
+            <color red="0.5820000171661377" green="0.1379999965429306" blue="0.59299999475479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
