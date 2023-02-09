@@ -192,7 +192,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hQi-sN-fw7" userLabel="VStack / Menu">
-                                <rect key="frame" x="30" y="175.66666666666663" width="333" height="233"/>
+                                <rect key="frame" x="30" y="175.66666666666663" width="333" height="170"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PwD-it-WmV" userLabel="HStack / Label &amp; Switch">
                                         <rect key="frame" x="0.0" y="0.0" width="333" height="31"/>
@@ -240,39 +240,17 @@
                                             </segmentedControl>
                                         </subviews>
                                     </stackView>
-                                    <view userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Dbh-E0-gsr" userLabel="View / Divider">
-                                        <rect key="frame" x="0.0" y="108.00000000000003" width="333" height="1"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="1" id="Wbo-uu-ffG"/>
-                                        </constraints>
-                                    </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="alG-d4-n3J" userLabel="HStack / Label &amp; Stepper">
-                                        <rect key="frame" x="0.0" y="124.00000000000003" width="333" height="32"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Font size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYy-9C-4Ou">
-                                                <rect key="frame" x="0.0" y="5.9999999999999982" width="68.666666666666671" height="20.333333333333329"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="16" minimumValue="1" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="uz0-xy-VZh">
-                                                <rect key="frame" x="239" y="0.0" width="94" height="32"/>
-                                                <color key="tintColor" red="0.51372549019607838" green="0.19607843137254902" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </stepper>
-                                        </subviews>
-                                    </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lCP-Pj-HyV" userLabel="View / Divider">
-                                        <rect key="frame" x="0.0" y="171.00000000000003" width="333" height="1"/>
+                                        <rect key="frame" x="0.0" y="108.00000000000003" width="333" height="1"/>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="Tpn-PP-D7c"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8hg-68-gj4" userLabel="HStack / Label &amp; Slider">
-                                        <rect key="frame" x="0.0" y="187.00000000000003" width="333" height="30"/>
+                                        <rect key="frame" x="0.0" y="124.00000000000003" width="333" height="30"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spacing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWF-h6-REV">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer length" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWF-h6-REV">
                                                 <rect key="frame" x="0.0" y="5" width="133" height="20.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -289,7 +267,7 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Phs-AZ-zXc" userLabel="View / Divider">
-                                        <rect key="frame" x="0.0" y="232.00000000000003" width="333" height="1"/>
+                                        <rect key="frame" x="0.0" y="169.00000000000003" width="333" height="1"/>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="BnG-sc-BOJ"/>
