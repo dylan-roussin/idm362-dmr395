@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC79358429CEE65100300E0F /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC79358329CEE65100300E0F /* EntryViewController.swift */; };
+		FC79358629CEE65F00300E0F /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC79358529CEE65F00300E0F /* TaskViewController.swift */; };
+		FC79358829CF14B600300E0F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC79358729CF14B600300E0F /* SettingsViewController.swift */; };
 		FC9DBF9B297991FB0064D39E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9DBF9A297991FB0064D39E /* AppDelegate.swift */; };
 		FC9DBF9D297991FB0064D39E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9DBF9C297991FB0064D39E /* SceneDelegate.swift */; };
 		FC9DBF9F297991FB0064D39E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9DBF9E297991FB0064D39E /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC79358329CEE65100300E0F /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		FC79358529CEE65F00300E0F /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		FC79358729CF14B600300E0F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FC9DBF97297991FB0064D39E /* idm362-dmr395.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "idm362-dmr395.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC9DBF9A297991FB0064D39E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC9DBF9C297991FB0064D39E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +69,9 @@
 				FC9DBFA3297991FC0064D39E /* Assets.xcassets */,
 				FC9DBFA5297991FC0064D39E /* LaunchScreen.storyboard */,
 				FC9DBFA8297991FC0064D39E /* Info.plist */,
+				FC79358329CEE65100300E0F /* EntryViewController.swift */,
+				FC79358529CEE65F00300E0F /* TaskViewController.swift */,
+				FC79358729CF14B600300E0F /* SettingsViewController.swift */,
 			);
 			path = "idm362-dmr395";
 			sourceTree = "<group>";
@@ -139,8 +148,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC9DBF9F297991FB0064D39E /* ViewController.swift in Sources */,
+				FC79358429CEE65100300E0F /* EntryViewController.swift in Sources */,
+				FC79358629CEE65F00300E0F /* TaskViewController.swift in Sources */,
 				FC9DBF9B297991FB0064D39E /* AppDelegate.swift in Sources */,
 				FC9DBF9D297991FB0064D39E /* SceneDelegate.swift in Sources */,
+				FC79358829CF14B600300E0F /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
