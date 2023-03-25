@@ -39,12 +39,22 @@ class ViewController: UIViewController {
             UserDefaults().set(1500, forKey: "time")
         }
         
-        timeLabel.text = formatTime(UserDefaults().integer(forKey: "time"))
+        time = UserDefaults().integer(forKey: "time") // Update the time property
+        timeLabel.text = formatTime(time)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(updateTimeSetting), name: UserDefaults.didChangeNotification, object: nil)
         
         // get tasks
         updateTasks()
         
     }
+    
+    @objc func updateTimeSetting() {
+        time = UserDefaults.standard.integer(forKey: "time")
+        timeLabel.text = formatTime(time)
+    }
+
+    
     
     func updateTasks() {
         tasks.removeAll()
