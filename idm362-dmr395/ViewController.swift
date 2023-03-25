@@ -128,21 +128,11 @@ class ViewController: UIViewController {
             time = UserDefaults().integer(forKey: "time")
             timeLabel.text = formatTime(time)
 
-            // Show alert if timer has reached 0
-            showAlert()
-
         } else {
             time -= 1
             timeLabel.text = formatTime(time)
         }
     }
-
-    func showAlert() {
-            let alert = UIAlertController(title: "Timer Finished", message: "Your timer has finished.", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            present(alert, animated: true, completion: nil)
-            print("Alert shown")
-        }
     
 
 
